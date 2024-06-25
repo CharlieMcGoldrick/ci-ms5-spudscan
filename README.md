@@ -1,7 +1,7 @@
 # Table of Contents 
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
-3. [Hypothesis and Validation](#hypothesis-and-validation)
+3. [Hypotheses and Validations](#hypotheses-and-validations)
 
 # Dataset Content
 The dataset is the Potato Plant Diseases Dataset from [Kaggle](https://www.kaggle.com/datasets/hafiznouman786/potato-plant-diseases-data/versions/1).
@@ -47,5 +47,32 @@ To address these business requirements, we have outlined the following epics and
     2. US2: As a user, I want interactive input widgets to provide real-time data and get health state classification results instantly. _(Business Requirement Covered: BR2)_
 - Epic: Dashboard Deployment and Release
     1. US1: As a client, I want a detailed prediction report for each examined leaf to make informed decisions about disease management. _(Business Requirement Covered: BR3)_
+
+[Back to top ⇧](#table-of-contents)
+
+# Hypotheses and Validations
+1. Hypothesis 1: Symptom Correlation
+    - We hypothesize that specific symptoms such as leaf spots, discoloration, and lesions are highly correlated with particular potato diseases.
+        - **Validation:** We will examine the correlation between symptoms and leaf health categories (healthy, early blight, late blight).
+2. Hypothesis 2: Symptom Severity
+    - The severity of symptoms on leaves will significantly influence the classification accuracy of the disease.
+        - **Validation:** We will use symptom severity ratings and their correlation with health state classifications to validate this hypothesis.
+3. Hypothesis 3: Image Processing
+    - Converting RGB images to grayscale might improve image classification performance by focusing on texture and contrast rather than color.
+        - **Validation:** We will compare the performance of models trained on RGB images versus grayscale images.
+
+[Back to top ⇧](#table-of-contents)
+
+# Rationale to Map Business Requirements to Data Visualizations and ML Tasks
+1. Business Requirement 1 (BR1): Data Visualization and Correlation Study
+    - Inspect the distribution of disease symptoms and plot histograms to understand their prevalence.
+    - Study the correlations between symptoms and leaf health categories (healthy, early blight, late blight) using Pearson and Spearman correlations.
+    - Plot key symptoms against leaf health categories to illustrate the relationships.
+2. Business Requirement 2 (BR2): CNN Model for Health State Classification
+    - Use a CNN model to classify the health states based on leaf images.
+    - Optimize and validate the model using metrics such as accuracy, precision, and recall.
+    - Develop a pipeline to preprocess images, train the model, and make predictions.
+3. Business Requirement 3 (BR3): Prediction Report
+    - Generate detailed reports for the examined leaves, including the prediction results and associated probabilities.
 
 [Back to top ⇧](#table-of-contents)
