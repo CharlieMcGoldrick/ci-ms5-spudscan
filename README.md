@@ -4,6 +4,7 @@
 3. [Hypotheses and Validations](#hypotheses-and-validations)
 4. [Rationale to Map Business Requirements to Data Visualizations and ML Tasks](#rationale-to-map-business-requirements-to-data-visualizations-and-ml-tasks)
 5. [ML Business Case](#ml-business-case)
+6. [Dashboard Design](#dashboard-design)
 
 # Dataset Content
 The dataset is the Potato Plant Diseases Dataset from [Kaggle](https://www.kaggle.com/datasets/hafiznouman786/potato-plant-diseases-data/versions/1).
@@ -92,7 +93,9 @@ To meet the second business requirement (BR2), we will train a CNN model.
     - The model is considered a failure if it misclassifies more than 25% of the images.
 - Output: A health state classification for each input image.
 
-## Dashboard Design
+[Back to top ⇧](#table-of-contents)
+
+# Dashboard Design
 The dataset provided contains 2152 images of potato leaves, categorized as healthy, early blight, or late blight. This data will be used to train and validate the model. The model will be integrated into an interactive dashboard to allow real-time health state classification and visualization of the results.
 
 Page 1: Quick Project Summary
