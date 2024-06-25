@@ -76,3 +76,49 @@ To address these business requirements, we have outlined the following epics and
     - Generate detailed reports for the examined leaves, including the prediction results and associated probabilities.
 
 [Back to top ⇧](#table-of-contents)
+
+# ML Business Case
+
+## Predict Potato Plant Health States
+**Model:** Convolutional Neural Network (CNN)
+
+To meet the second business requirement (BR2), we will train a CNN model.
+- Objective: Enable accurate identification and classification of potato plant health states.
+- Approach: Supervised learning using a CNN to process high-resolution images.
+- Success Metrics:
+    - Achieve at least 75% accuracy on the validation set.
+    - The model is considered a failure if it misclassifies more than 25% of the images.
+- Output: A health state classification for each input image.
+
+## Dashboard Design
+The dataset provided contains 2152 images of potato leaves, categorized as healthy, early blight, or late blight. This data will be used to train and validate the model. The model will be integrated into an interactive dashboard to allow real-time health state classification and visualization of the results.
+
+Page 1: Quick Project Summary
+- Overview of the project, dataset, and business requirements.
+
+Page 2: Leaf Visualizer
+- Interactive visualizations to differentiate between healthy and diseased leaves.
+- Display mean and standard deviation images for each health category.
+
+Page 3: Health State Detector
+- Upload leaf images to get real-time classification results.
+- Display prediction statements and associated probabilities.
+- Provide a downloadable report of the examined leaves.
+
+Page 4: Project Hypotheses and Validation
+- Present each hypothesis, explanation, validation process, and conclusion.
+
+Page 5: ML Evaluation Metrics
+- Label Distribution for Training, Validation, and Test Sets:
+    - Frequency counts for each label across the training, validation, and test datasets to ensure balanced representation.
+- Dataset Allocation:
+    - Percentage breakdown of the entire dataset across training, validation, and test sets to understand the data split.
+- Performance Metrics:
+    - ROC Curve: A graphical representation of the model's diagnostic ability, illustrating the true positive rate against the false positive rate at various threshold settings.
+    - Confusion Matrix: A table that shows the number of true positives, true negatives, false positives, and false negatives to evaluate the model's accuracy.
+- Training Progress:
+    - Model History: Tracking accuracy and loss metrics over epochs to observe the model's learning process, specifically using an LSTM model.
+- Final Model Assessment:
+    - Test Set Evaluation: Final performance results on the test set to validate the model's generalization ability and real-world applicability.
+
+[Back to top ⇧](#table-of-contents)
