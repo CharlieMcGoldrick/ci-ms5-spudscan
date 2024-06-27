@@ -35,8 +35,7 @@ We have agreed on the following business requirements with our client:
 To address these business requirements, we have outlined the following epics and user stories. Each user story is broken down into manageable tasks, following an agile development process.
 
 - Epic: Information Gathering and Data Collection
-    1. US1: As a client, I want to know which symptoms are most correlated with each potato disease (early blight, late blight) and healthy leaves so that I can focus on key diagnostic features. _(Business Requirement Covered: BR1)_
-    2. US2: As a user, I want to know the source and content of the data used in training the model to be confident in the quality of the trained model. _(Business Requirements Covered: BR2, BR3)_
+    1. US1: As a user, I want to know the source and content of the data used in training the model to be confident in the quality of the trained model. _(Business Requirements Covered: BR2, BR3)_
 - Epic: Data Visualization, Cleaning, and Preparation
     1. US1: As a client, I want to see visualizations of symptom correlations with leaf health categories to better understand the disease patterns. _(Business Requirement Covered: BR1)_
     2. US2: As a user, I want access to the data cleaning and preparation pipeline to quickly process new data for health state classification. _(Business Requirement Covered: BR2)_
@@ -57,9 +56,6 @@ To address these business requirements, we have outlined the following epics and
 1. Hypothesis 1: Symptom Correlation
     - We hypothesize that specific symptoms such as leaf spots, discoloration, and lesions are highly correlated with particular potato diseases.
         - **Validation:** We will examine the correlation between symptoms and leaf health categories (healthy, early blight, late blight).
-2. Hypothesis 2: Symptom Severity
-    - The severity of symptoms on leaves will significantly influence the classification accuracy of the disease.
-        - **Validation:** We will use symptom severity ratings and their correlation with health state classifications to validate this hypothesis.
 3. Hypothesis 3: Image Processing
     - Converting RGB images to grayscale might improve image classification performance by focusing on texture and contrast rather than color.
         - **Validation:** We will compare the performance of models trained on RGB images versus grayscale images.
