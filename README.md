@@ -121,7 +121,7 @@ Page 5: ML Evaluation Metrics
     - ROC Curve: A graphical representation of the model's diagnostic ability, illustrating the true positive rate against the false positive rate at various threshold settings.
     - Confusion Matrix: A table that shows the number of true positives, true negatives, false positives, and false negatives to evaluate the model's accuracy.
 - Training Progress:
-    - Model History: Tracking accuracy and loss metrics over epochs to observe the model's learning process, specifically using an LSTM model.
+    - Model History: Tracking accuracy and loss metrics over epochs to observe the model's learning process, specifically using a CNN model.
 - Final Model Assessment:
     - Test Set Evaluation: Final performance results on the test set to validate the model's generalization ability and real-world applicability.
 
