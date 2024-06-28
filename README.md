@@ -27,28 +27,32 @@ Although the client has extensive knowledge in traditional farming methods, they
 For more details, refer to the [interview with the Operations Manager of Green Fields Potato Farm](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/wiki/Business-Requirements-Interview).
 
 We have agreed on the following business requirements with our client:
-1. BR1: The client is interested in understanding how different disease symptoms correlate with specific potato diseases (early blight, late blight) and healthy leaves. Therefore, they expect data visualizations showing these correlations against the leaf categories.
-2. BR2: The client wants to accurately identify and classify potato plant health states using a machine learning model, specifically a Convolutional Neural Network (CNN).
-3. BR3: The client is interested in obtaining detailed prediction reports for the examined leaves.
+1. Business Requirement 1 (BR1): Data Visualization
+    - We will display the "mean" and "standard deviation" images for healthy, early blight and late blight leaves.
+    - We will display the difference between average leaves.
+    - We will display an image montage for healthy, early blight and late blight leaves.
+2. Business Requirement 2 (BR2): CNN Model for Health State Classification
+    - We want to predict if a given leaf is healthy or has early/late blight.
+    - We want to build a binary classifier and generate reports.
 
 ## Epics & User Stories
 To address these business requirements, we have outlined the following epics and user stories. Each user story is broken down into manageable tasks, following an agile development process.
 
 - Epic: Information Gathering and Data Collection
-    1. US1: As a user, I want to know the source and content of the data used in training the model to be confident in the quality of the trained model. _(Business Requirements Covered: BR2, BR3)_
+    1. US1: As a user, I want to know the source and content of the data used in training the model to be confident in the quality of the trained model. (Business Requirements Covered: BR2)
 - Epic: Data Visualization, Cleaning, and Preparation
-    1. US1: As a client, I want to see visualizations of symptom correlations with leaf health categories to better understand the disease patterns. _(Business Requirement Covered: BR1)_
-    2. US2: As a user, I want access to the data cleaning and preparation pipeline to quickly process new data for health state classification. _(Business Requirement Covered: BR2)_
-    3. US3: As a user, I want to understand the project hypotheses and how they were validated to understand the mechanisms behind health state detection. _(Business Requirement Covered: BR2)_
+    1. US1: As a client, I want to see visualizations that differentiate healthy potato leaves from those affected by early blight and late blight to better understand the distinguishing features. (Business Requirement Covered: BR1)
+    2. US2: As a user, I want access to the data cleaning and preparation pipeline to quickly process new data for health state classification. (Business Requirement Covered: BR2)
+    3. US3: As a user, I want to understand the project hypotheses and how they were validated to understand the mechanisms behind health state detection. (Business Requirement Covered: BR2)
 - Epic: Model Training, Optimization, and Validation
-    1. US1: As a client, I want a reliable model to classify the health states of potato plants so that I can provide timely advice to farmers. _(Business Requirement Covered: BR2)_
-    2. US2: As a technical user, I want to understand the machine learning steps used to develop the health state classification model to ensure transparency and reproducibility. _(Business Requirement Covered: BR2)_
-    3. US3: As a technical user, I want to know the model performance metrics to ensure that the predictions are reliable. _(Business Requirement Covered: BR2)_
+    1. US1: As a client, I want a reliable model to classify the health states of potato leaves so that I can provide timely advice to farmers. (Business Requirement Covered: BR2)
+    2. US2: As a technical user, I want to understand the machine learning steps used to develop the health state classification model to ensure transparency and reproducibility. (Business Requirement Covered: BR2)
+    3. US3: As a technical user, I want to know the model performance metrics to ensure that the predictions are reliable. (Business Requirement Covered: BR2)
 - Epic: Dashboard Planning, Designing, and Development
-    1. US1: As a client, I want an interactive dashboard to display the classification results and visualize the relationships between symptoms and leaf health states. _(Business Requirements Covered: BR1, BR2)_
-    2. US2: As a user, I want interactive input widgets to provide real-time data and get health state classification results instantly. _(Business Requirement Covered: BR2)_
+    1. US1: As a client, I want an interactive dashboard to display the classification results and visualize the differences between healthy leaves and those affected by early blight and late blight. (Business Requirements Covered: BR1, BR2)
+    2. US2: As a user, I want interactive input widgets to provide real-time data and get health state classification results instantly. (Business Requirement Covered: BR2)
 - Epic: Dashboard Deployment and Release
-    1. US1: As a client, I want a detailed prediction report for each examined leaf to make informed decisions about disease management. _(Business Requirement Covered: BR3)_
+    1. US1: As a client, I want a detailed prediction report for each examined leaf to make informed decisions about disease management. (Business Requirement Covered: BR2)
 
 [Back to top ⇧](#table-of-contents)
 
