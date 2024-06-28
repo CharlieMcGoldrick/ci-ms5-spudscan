@@ -69,16 +69,13 @@ To address these business requirements, we have outlined the following epics and
 [Back to top ⇧](#table-of-contents)
 
 # Rationale to Map Business Requirements to Data Visualizations and ML Tasks
-1. Business Requirement 1 (BR1): Data Visualization and Correlation Study
-    - Inspect the distribution of disease symptoms and plot histograms to understand their prevalence.
-    - Study the correlations between symptoms and leaf health categories (healthy, early blight, late blight) using Pearson and Spearman correlations.
-    - Plot key symptoms against leaf health categories to illustrate the relationships.
+1. Business Requirement 1 (BR1): Data Visualization
+    - We will display the "mean" and "standard deviation" images for healthy, early blight and late blight leaves.
+    - We will display the difference between average leaves.
+    - We will display an image montage for healthy, early blight and late blight leaves.
 2. Business Requirement 2 (BR2): CNN Model for Health State Classification
-    - Use a CNN model to classify the health states based on leaf images.
-    - Optimize and validate the model using metrics such as accuracy, precision, and recall.
-    - Develop a pipeline to preprocess images, train the model, and make predictions.
-3. Business Requirement 3 (BR3): Prediction Report
-    - Generate detailed reports for the examined leaves, including the prediction results and associated probabilities.
+    - We want to predict if a given leaf is healthy or has early/late blight.
+    - We want to build a classifier and generate reports.
 
 [Back to top ⇧](#table-of-contents)
 
