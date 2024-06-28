@@ -58,11 +58,13 @@ To address these business requirements, we have outlined the following epics and
 
 # Hypotheses and Validations
 1. Hypothesis 1: Symptom Correlation
-    - We hypothesize that specific symptoms such as leaf spots, discoloration, and lesions are highly correlated with particular potato diseases.
-        - **Validation:** We will examine the correlation between symptoms and leaf health categories (healthy, early blight, late blight).
-3. Hypothesis 3: Image Processing
-    - Converting RGB images to grayscale might improve image classification performance by focusing on texture and contrast rather than color.
-        - **Validation:** We will compare the performance of models trained on RGB images versus grayscale images.
+    - **Hypothesis:** We suspect potato leaves affected by early blight or late blight have distinct symptoms, such as leaf spots, discoloration, and lesions, differentiating them from healthy leaves.
+    - **Validation:**
+        - **Average Image Study:** Conduct an average image study to investigate the common features in healthy, early blight, and late blight leaves.
+        - **Data Annotation:** Annotate the images with specific symptoms such as leaf spots, discoloration, and lesions.
+        - **Symptom Feature Extraction:** Use image processing techniques to extract features related to these symptoms.
+        - **Correlation Analysis:** Perform statistical analysis to determine the correlation between these symptoms and the health categories (healthy, early blight, late blight).
+        - **Visualization:** Create visualizations such as scatter plots, heatmaps, and annotated average images to illustrate the correlation.
 
 [Back to top ⇧](#table-of-contents)
 
