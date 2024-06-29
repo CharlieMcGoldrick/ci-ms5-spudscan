@@ -10,9 +10,6 @@ matplotlib==3.3.1
 seaborn==0.11.0
 plotly==4.12.0
 
-# Optional additional visualization library
-altair<5
-
 # Protocol Buffers for TensorFlow compatibility
 protobuf==3.20
 
