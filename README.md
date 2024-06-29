@@ -9,6 +9,9 @@
 6. [Dashboard Design](#dashboard-design)
 7. [Bugs](#bugs)
 8. [Deployment](#deployment)
+9. [Technologies used](#technologies-used)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
 # Dataset Content
 The dataset is the Potato Plant Diseases Dataset from [Kaggle](https://www.kaggle.com/datasets/hafiznouman786/potato-plant-diseases-data).
@@ -210,6 +213,8 @@ To fork this repository, follow these steps:
 - **seaborn 0.11.0**: Plotted the model's confusion matrix.
 - **streamlit 0.85.0**: Developed the project dashboard.
 
+[Back to top ⇧](#table-of-contents)
+
 # Credits
 
 ## Dataset
@@ -219,3 +224,11 @@ To fork this repository, follow these steps:
 - [Template used](https://github.com/Code-Institute-Solutions/milestone-project-bring-your-own-data) to start the project
 - Model learning Curve - C is from [Stack Overflow](https://stackoverflow.com/questions/41908379/keras-plot-training-validation-and-test-set-accuracy) by [Tim Seed](https://stackoverflow.com/users/3257992/tim-seed)
 - App pages for the Streamlit dashboard were largely from [ci-walkthrough-malaria-detector](https://github.com/CharlieMcGoldrick/ci-walkthrough-malaria-detector)
+
+[Back to top ⇧](#table-of-contents)
+
+# Acknowledgements
+- Thanks to my mentor Mo Shami and Code Institue.
+- Thank you to my friends and family for their patience and understanding whilst working on this project.
+
+[Back to top ⇧](#table-of-contents)
