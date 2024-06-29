@@ -11,3 +11,4 @@ docs
 outputs/v1
 outputs/v2
 outputs/v3
+outputs/v4/best_model.h5
