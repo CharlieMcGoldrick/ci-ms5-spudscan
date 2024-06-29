@@ -63,8 +63,7 @@ To address these business requirements, we have outlined the following epics and
         - **Average Image Study:** Conduct an average image study to investigate the common features in healthy, early blight, and late blight leaves.
         - **Data Annotation:** Annotate the images with specific symptoms such as leaf spots, discoloration, and lesions.
         - **Symptom Feature Extraction:** Use image processing techniques to extract features related to these symptoms.
-        - **Correlation Analysis:** Perform statistical analysis to determine the correlation between these symptoms and the health categories (healthy, early blight, late blight).
-        - **Visualization:** Create visualizations such as scatter plots, heatmaps, and annotated average images to illustrate the correlation.
+        - **Visualization:** Create visualizations such as heatmaps, and annotated average images to illustrate the correlation.
 
 [Back to top ⇧](#table-of-contents)
 
@@ -110,7 +109,7 @@ Page 3: Health State Detector
 - Provide a downloadable report of the examined leaves.
 
 Page 4: Project Hypotheses and Validation
-- Present each hypothesis, explanation, validation process, and conclusion.
+- Present hypothesis, explanation, validation process, and conclusion.
 
 Page 5: ML Evaluation Metrics
 - Label Distribution for Training, Validation, and Test Sets:
