@@ -8,6 +8,7 @@
 5. [ML Business Case](#ml-business-case)
 6. [Dashboard Design](#dashboard-design)
 7. [Bugs](#bugs)
+8. [Deployment](#deployment)
 
 # Dataset Content
 The dataset is the Potato Plant Diseases Dataset from [Kaggle](https://www.kaggle.com/datasets/hafiznouman786/potato-plant-diseases-data).
@@ -138,5 +139,50 @@ No known bugs
 - [Fix: adjust dataset ratios](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/commit/3d4a778b345e4ea9ecd9cd40d045c13a6c78cdce) - The validation and test ratio were both set to `0.15`. I set this to validation ratio of `0.1` and test ratio of `0.2`
 - [Fix: add import to load model](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/commit/030beb3329c230b4e2873c441209783bfdf58a97) - Needed to add `from keras.models import load_model`
 - [Fix: Correct DataFrame shape handling for prediction probabilities](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/commit/e0518b9bf54fbae7e40c8fd110156eecf718ddec) - Correct DataFrame shape handling for prediction probabilities by ensuring pred_proba and class_labels are in correct list format. Adjusted Streamlit app and functions to properly handle and display prediction results.
+
+[Back to top ⇧](#table-of-contents)
+
+# Deployment
+
+## Creating the Heroku App
+To deploy this project on Heroku, follow these steps:
+1. **Create a `requirements.txt` File**: This file should list all the dependencies the program needs to run. Heroku uses this file to install the necessary packages.
+2. **Set the Python Runtime**: Create a `runtime.txt` file specifying a Python version compatible with the Heroku-20 stack.
+3. **Push Changes to GitHub**: Commit and push your recent changes to GitHub.
+4. **Create a Heroku App**:
+   - Log into your Heroku account.
+   - Click "CREATE NEW APP," provide a unique name, and select a geographical region.
+5. **Add Buildpacks**: From the Settings tab, add the `heroku/python` buildpack.
+6. **Deploy the App**:
+   - Go to the Deploy tab, choose GitHub as the deployment method.
+   - Connect to GitHub and select your project's repository.
+   - Choose the branch you want to deploy and click "Deploy Branch."
+7. **Enable Deploys**:
+   - You can either enable automatic deploys or manually deploy by selecting "Deploy Branch."
+8. **Monitor the Logs**: Wait for the logs to show the dependencies being installed and the app being built.
+9. **Access the App**: Once deployed, your app will be accessible via a link like `https://your-project-name.herokuapp.com/`.
+10. **Manage Slug Size**: If the slug size is too large, add unnecessary large files to the `.slugignore` file.
+
+## Clone a GitHub Repository
+
+To make a clone of this repository, follow these steps:
+
+1. **Login to your GitHub account**.
+2. **Go to the repository** by visiting the link: [Charlie McGoldrick Github - SpudScan Repo](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan).
+3. **Click the "Code" button** and then use the copy button next to the link to copy the link.
+4. **In your IDE of choice, open a new terminal** and use the following clone command:
+   `git clone https://github.com/CharlieMcGoldrick/ci-ms5-spudscan`
+
+## Forking the GitHub Repository
+
+To fork this repository, follow these steps:
+
+1. **Log in to your GitHub account**.
+2. **Go to the repository you want to fork**, which is located at: [Charlie McGoldrick Github - SpudScan Repo](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan).
+3. **In the top-right corner of the repository page, click on the "Fork" button**.
+4. **GitHub will prompt you to select where you want to fork the repository**. Choose your personal account or organization.
+5. **Wait for the forking process to complete**. Once it's done, you will be redirected to your forked repository under your GitHub account.
+
+**NOTE**: Any changes pushed to the main branch automatically show up on the website.
 
 [Back to top ⇧](#table-of-contents)
