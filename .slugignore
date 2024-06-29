@@ -12,3 +12,5 @@ outputs/v1
 outputs/v2
 outputs/v3
 outputs/v4/best_model.h5
+inputs/potato_disease_dataset/train
+inputs/potato_disease_dataset/test
