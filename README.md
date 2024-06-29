@@ -186,3 +186,26 @@ To fork this repository, follow these steps:
 **NOTE**: Any changes pushed to the main branch automatically show up on the website.
 
 [Back to top ⇧](#table-of-contents)
+
+# Technologies used
+## Platforms
+- GitHub: Repository for storing the project code.
+- Kaggle: Source for downloading datasets.
+- Gitpod: Development environment used for writing code, committing changes, and pushing to GitHub.
+- Jupyter Notebook: Utilized for editing and running code.
+- Heroku: Used to deploy the project.
+
+## Languages
+- Markdown
+- Python
+
+## Main Data Analysis and Machine Learning Libraries
+- **matplotlib 3.3.1**: Plotted dataset distributions.
+- **numpy 1.19.2**: Utilized for array conversions.
+- **pandas 1.1.2**: Managed data creation and storage as dataframes.
+- **tensorflow-cpu 2.6.0**: Used for creating the model.
+- **keras 2.6.0**: Set model hyperparameters.
+- **scikit-learn 0.24.2**: Applied for model evaluation.
+- **plotly 5.12.0**: Visualized the model's learning curve.
+- **seaborn 0.11.0**: Plotted the model's confusion matrix.
+- **streamlit 0.85.0**: Developed the project dashboard.
