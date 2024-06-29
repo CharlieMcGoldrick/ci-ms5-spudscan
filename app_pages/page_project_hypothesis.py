@@ -18,6 +18,7 @@ def page_project_hypothesis_body():
     )
     st.warning(
         "The model was able to detect such differences and learn how to differentiate and generalize in order to make accurate predictions. "
+        "It exceeded well above the 75% accurarcy rate set out by the client and so has been a success"
         "A good model trains its ability to predict classes on a batch of data without adhering too closely to that set of data. "
         "In this way, the model is able to generalize and predict future observations reliably because it didn't 'memorize' the relationships "
         "between features and labels as seen in the training dataset but the general pattern from feature to labels."
