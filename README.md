@@ -5,6 +5,7 @@
 4. [Rationale to Map Business Requirements to Data Visualizations and ML Tasks](#rationale-to-map-business-requirements-to-data-visualizations-and-ml-tasks)
 5. [ML Business Case](#ml-business-case)
 6. [Dashboard Design](#dashboard-design)
+7. [Bugs](#bugs)
 
 # Dataset Content
 The dataset is the Potato Plant Diseases Dataset from [Kaggle](https://www.kaggle.com/datasets/hafiznouman786/potato-plant-diseases-data).
@@ -123,5 +124,17 @@ Page 5: ML Evaluation Metrics
     - Model History: Tracking accuracy and loss metrics over epochs to observe the model's learning process, specifically using a CNN model.
 - Final Model Assessment:
     - Test Set Evaluation: Final performance results on the test set to validate the model's generalization ability and real-world applicability.
+
+[Back to top ⇧](#table-of-contents)
+
+# Bugs
+
+## Known Bugs
+No known bugs
+
+## Fixed Bugs
+- [Fix: adjust dataset ratios](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/commit/3d4a778b345e4ea9ecd9cd40d045c13a6c78cdce) - The validation and test ratio were both set to `0.15`. I set this to validation ratio of `0.1` and test ratio of `0.2`
+- [Fix: add import to load model](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/commit/030beb3329c230b4e2873c441209783bfdf58a97) - Needed to add `from keras.models import load_model`
+- [Fix: Correct DataFrame shape handling for prediction probabilities](https://github.com/CharlieMcGoldrick/ci-ms5-spudscan/commit/e0518b9bf54fbae7e40c8fd110156eecf718ddec) - Correct DataFrame shape handling for prediction probabilities by ensuring pred_proba and class_labels are in correct list format. Adjusted Streamlit app and functions to properly handle and display prediction results.
 
 [Back to top ⇧](#table-of-contents)
