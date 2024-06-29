@@ -209,3 +209,13 @@ To fork this repository, follow these steps:
 - **plotly 5.12.0**: Visualized the model's learning curve.
 - **seaborn 0.11.0**: Plotted the model's confusion matrix.
 - **streamlit 0.85.0**: Developed the project dashboard.
+
+# Credits
+
+## Dataset
+- The Potato leaves dataset is from [Kaggle](https://www.kaggle.com/datasets/hafiznouman786/potato-plant-diseases-data/data)
+
+## Code
+- [Template used](https://github.com/Code-Institute-Solutions/milestone-project-bring-your-own-data) to start the project
+- Model learning Curve - C is from [Stack Overflow](https://stackoverflow.com/questions/41908379/keras-plot-training-validation-and-test-set-accuracy) by [Tim Seed](https://stackoverflow.com/users/3257992/tim-seed)
+- App pages for the Streamlit dashboard were largely from [ci-walkthrough-malaria-detector](https://github.com/CharlieMcGoldrick/ci-walkthrough-malaria-detector)
