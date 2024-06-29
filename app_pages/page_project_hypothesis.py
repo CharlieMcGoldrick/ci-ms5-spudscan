@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def page_project_hypothesis_body():
     st.write("### Hypothesis 1: Symptom Correlation")
 
-    st.success(
+    st.info(
         "We suspect potato leaves affected by early blight or late blight have distinct symptoms, such as leaf spots, discoloration, "
         "and lesions, differentiating them from healthy leaves."
     )
@@ -16,7 +16,7 @@ def page_project_hypothesis_body():
         "- **Correlation Analysis:** Performed statistical analysis to determine the correlation between these symptoms and the health categories.\n"
         "- **Visualization:** Created visualizations like scatter plots, heatmaps, and annotated average images to illustrate the correlation."
     )
-    st.warning(
+    st.success(
         "The model was able to detect such differences and learn how to differentiate and generalize in order to make accurate predictions. "
         "It exceeded well above the 75% accurarcy rate set out by the client and so has been a success"
         "A good model trains its ability to predict classes on a batch of data without adhering too closely to that set of data. "
@@ -26,6 +26,7 @@ def page_project_hypothesis_body():
     
     st.write("To explore the validation of these processes, visit the pages using the navigation on the left:")
     st.markdown("""
-    - **[Leaves Visualizer](#)**
-    - **[Health State Detector](#)**
+    - **Leaves Visualizer**
+    - **Health State Detector**
+    - **ML Performance Metrics**
     """)
