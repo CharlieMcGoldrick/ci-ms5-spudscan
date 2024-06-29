@@ -30,7 +30,7 @@ def page_leaves_visualizer_body():
         avg_early_blight = plt.imread(f"outputs/{version}/stats_Potato___Early_blight.png")
         avg_late_blight = plt.imread(f"outputs/{version}/stats_Potato___Late_blight.png")
 
-        st.warning(
+        st.success(
             f"### Summary of Differences:\n\n"
             f"**Early Blight:**\n"
             f"* **Brighter Leaves:** The average intensity of the images shows that early blight leaves are generally brighter than the other categories.\n"
@@ -54,7 +54,7 @@ def page_leaves_visualizer_body():
         avg_diff_healthy_late = plt.imread(f"outputs/{version}/avg_diff_Potato___healthy_Potato___Late_blight.png")
         avg_diff_early_late = plt.imread(f"outputs/{version}/avg_diff_Potato___Early_blight_Potato___Late_blight.png")
 
-        st.warning(
+        st.success(
             f"The differences between these average images show how the appearance of leaves changes from healthy to diseased states:\n\n"
             f"* **Healthy vs Early Blight:** The difference highlights how early blight leaves are generally brighter and have distinct spots.\n"
             f"* **Healthy vs Late Blight:** This shows that late blight leaves are darker with large, irregular lesions.\n"
