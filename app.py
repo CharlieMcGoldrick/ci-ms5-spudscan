@@ -8,7 +8,7 @@ from app_pages.page_health_state_detector import page_health_state_detector_body
 from app_pages.page_project_hypothesis import page_project_hypothesis_body
 from app_pages.page_ml_performance import page_ml_performance_metrics_body
 
-app = MultiPage(app_name="Potato Plant Disease Detector")
+app = MultiPage(app_name="SpudScan the Potato Plant Disease Detector")
 
 # Add your app pages here using .add_page()
 app.add_page("Quick Project Summary", page_summary_body)
