@@ -43,7 +43,8 @@ def predict_with_tflite(interpreter, input_details, output_details, image):
     return predictions
 
 def page_health_state_detector_body():
-    st.info(
+    st.write("### Health State Detector")
+    st.warning(
         "Upload pictures of potato leaves to discover whether they are healthy, affected by early blight, or late blight, and download a report of the examined leaves."
     )
 

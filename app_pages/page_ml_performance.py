@@ -4,6 +4,7 @@ import pandas as pd
 from src.machine_learning.evaluation_results import load_test_evaluation
 
 def page_ml_performance_metrics_body():
+    st.write("### ML Performance Metrics")
     version = 'v4'
     st.info(
         "On this page, you will find a user-friendly overview of how the dataset was divided, the performance of the model on this data, and a brief explanation of each result."
